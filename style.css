@@ -12,8 +12,11 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.container {
+main {
   padding: 2rem 0;
+}
+
+.container {
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -64,7 +67,7 @@ body {
   color: hsl(236, 100%, 87%);
   transition: color 0.4s linear;
 }
-.date p:hover {
+.date:hover {
   color: #fff;
 }
 .date.active {
@@ -152,6 +155,16 @@ body {
   color: hsl(236, 100%, 87%);
 }
 
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: hsl(246, 80%, 60%);
+}
+
 /* meadi screen */
 @media screen and (min-width: 1040px) {
   main {
@@ -159,15 +172,17 @@ body {
     display: grid;
     place-items: center;
   }
+
   .container {
     max-width: 1040px;
     grid-template-columns: 1fr 3fr;
+    gap: 20px;
   }
 
   .person-info {
     flex-flow: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 20px;
     padding: 2rem;
   }
 
@@ -178,12 +193,13 @@ body {
 
   .person-toggle {
     display: grid;
-    gap: 1rem;
+    gap: 20px;
     padding: 2rem;
   }
 
   .items {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .item-content {
@@ -198,7 +214,11 @@ body {
   }
 
   .hour {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
+  }
+
+  .attribution {
+    grid-column: 1 / 3;
   }
 }
