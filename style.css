@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 /* global styles */
 * {
   margin: 0;
@@ -7,6 +9,7 @@
 
 body {
   background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -26,7 +29,7 @@ body {
 }
 
 .person-info {
-  background-color: hsl(235, 45%, 61%);
+  background-color: hsl(246, 80%, 60%);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -44,18 +47,27 @@ body {
 .person-name {
   color: #fff;
 }
+.person-name p {
+  font-weight: 300;
+}
+.person-name h1 {
+  font-weight: 400;
+}
 
 .person-toggle {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  color: hsl(236, 100%, 87%);
   cursor: pointer;
 }
-.person-toggle p {
+.date {
+  color: hsl(236, 100%, 87%);
   transition: color 0.4s linear;
 }
-.person-toggle p:hover {
+.date p:hover {
+  color: #fff;
+}
+.date.active {
   color: #fff;
 }
 
@@ -107,13 +119,13 @@ body {
 .item-content {
   background: hsl(235, 46%, 20%);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin-top: -20px;
   transition: background 0.4s linear;
 }
 
 .item-card:hover .item-content {
-  background: hsl(246, 80%, 60%);
+  background: hsl(235, 45%, 61%);
 }
 
 .item-title {
@@ -132,6 +144,7 @@ body {
 
 .hour {
   font-size: 40px;
+  font-weight: 00;
   color: #fff;
 }
 
